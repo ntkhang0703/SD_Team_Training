@@ -1,4 +1,3 @@
-using API.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Configurations
@@ -9,7 +8,7 @@ namespace API.Configurations
             if (services == null) throw new ArgumentNullException(nameof(services));
 
             var area = configuration.GetSection("AppSettings:Area").Value;
-             services.AddDbContext<DBContext>(options => options.UseSqlServer(configuration.GetConnectionString($"DefaultConnection_{area}")));
+            // services.AddDbContext<DBContext>(options => options.UseSqlServer(configuration.GetConnectionString($"DefaultConnection_{area}")));
         }
     }
 }
