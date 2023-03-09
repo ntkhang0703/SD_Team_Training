@@ -2,7 +2,6 @@
 using AgileObjects.AgileMapper;
 using API._Repositories;
 using API._Services.Interfaces;
-using API.DTOs;
 using API.Models;
 using LinqKit;
 using SD3_API.Helpers.Utilities;
@@ -12,7 +11,6 @@ namespace API._Services.Services
     public class ShiftDataMaintenanceService : IShiftDataMaintenanceService
     {
         private readonly IRepositoryAccessor _repoAccessor;
-        private object x;
 
         public ShiftDataMaintenanceService(IRepositoryAccessor repoAccessor)
         {
